@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2f1; /* Pale teal background */
+        }
+        h2 {
+            text-align: center;
+            color: #00796b; /* Darker teal for headings */
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #009688; /* Teal header color */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f1f1f1; /* Light gray for even rows */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Details</h2>
+
+<table border="1">
+    <tr>
+        <th>Room Number</th>
+        <th>Roll Number</th>
+        <th>Name</th>
+        <th>Batch</th>
+        <th>Branch</th>
+    </tr>
+    {% for student in students %}
+    <tr>
+        <td>{{ student[0] }}</td>
+        <td>{{ student[1] }}</td>
+        <td>{{ student[2] }}</td>
+        <td>{{ student[3] }}</td>
+        <td>{{ student[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+
+

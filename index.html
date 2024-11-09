@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to IITJ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://images.indianexpress.com/2024/03/IIT-Jodhpur_2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+        .centered-content {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hostel-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 20px; /* Space between the grid items */
+            margin-top: 20px;
+        }
+        .hostel-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden; /* Round corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative; /* To position the text overlay */
+        }
+        .hostel-card img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        .hostel-info {
+            padding: 10px;
+            position: absolute; /* Position text on top of the image */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+        }
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+        .top-right a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.4em;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            padding: 10px;
+        }
+        .top-right a:hover {
+            color: #4cbfa6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-right">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacts</a>
+        <a href="#facilities">Facilities</a>
+    </div>
+
+    <div class="centered-content">
+        <h1>Welcome to IITJ</h1>
+        <p>Your home of learning and innovation</p>
+        <div class="hostel-container">
+            <!-- Example Hostel Cards -->
+            <div class="hostel-card">
+                <img src="http://swc.iitj.ac.in/images/hostel/image11.jpg" alt="Hostel 1">
+                <div class="hostel-info">
+                    <h3>Hostel 1</h3>
+                    <p>Type: Boys</p>
+                </div>
+            </div>
+            <div class="hostel-card">
+                <img src="http://swc.iitj.ac.in/images/hostel/image3.jpg" alt="Hostel 2">
+                <div class="hostel-info">
+                    <h3>Hostel 2</h3>
+                    <p>Type: Girls</p>
+                </div>
+            </div>
+            <div class="hostel-card">
+                <img src="http://swc.iitj.ac.in/images/hostel/image2.jpg" alt="Hostel 3">
+                <div class="hostel-info">
+                    <h3>Hostel 3</h3>
+                    <p>Type: Co-ed</p>
+                </div>
+            </div>
+            <a href = "hostel_details.html">
+                <div class="hostel-card">
+                    <img src="http://swc.iitj.ac.in/images/hostel/image5.jpg" alt="Hostel 4">
+                    <div class="hostel-info">
+                        <h3>Hostel 4</h3>
+                        <p>Type: Boys</p>
+                    
+                    </div>
+                </div>
+            </a>
+            <div class="hostel-card">
+                <img src="http://swc.iitj.ac.in/images/hostel/image1.jpg" alt="Hostel 5">
+                <div class="hostel-info">
+                    <h3>Hostel 5</h3>
+                    <p>Type: Girls</p>
+                </div>
+            </div>
+            <div class="hostel-card">
+                <img src="http://swc.iitj.ac.in/images/hostel/image10.jpg" alt="Hostel 6">
+                <div class="hostel-info">
+                    <h3>Hostel 6</h3>
+                    <p>Type: Co-ed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+ 
